@@ -44,6 +44,8 @@ export const Hello = () => {
                 <button type="button" onClick={ change }>Change</button><br/>
                 <button type="button" onClick={ append }>APPEND</button><br/>
             </form>
+            <button  onClick={() => Hellodispatch({ type : 'RESET'})}> RESET </button>
+
             <hr/>
             <form>
                 <input type="text" value={inputSirname} onChange={(e)=>{setInputSirname(e.target.value)}} placeholder="Sir Name" required/><br/>
